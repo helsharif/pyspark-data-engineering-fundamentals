@@ -62,10 +62,9 @@ This project was built using **Python 3.11 + PySpark** in a Conda environment.
 Example setup:
 
 ```bash
-conda create -n spark_env python=3.11
-conda activate spark_env
-pip install pyspark
-pip install pandas numpy
+conda env create -f spark4_env001.yml
+conda activate spark4_env001
+
 ```
 
 Then start Jupyter:
@@ -80,7 +79,7 @@ jupyter lab
 
 1️⃣ Clone repository  
 2️⃣ Start your Spark-enabled environment  
-3️⃣ Open `/notebooks` in Jupyter / VS Code  
+3️⃣ Open notebooks in Jupyter / VS Code  
 4️⃣ Run cells sequentially
 
 ---
