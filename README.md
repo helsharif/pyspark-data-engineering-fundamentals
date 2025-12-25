@@ -46,7 +46,7 @@ pyspark-data-engineering-fundamentals/
 │
 ├── .gitignore # Ignore environment + build files
 │
-├── spark_env001.yml - Shortcut.lnk # Shortcut to conda environment file
+├── spark4_env001.yml - conda environment file
 │
 └── README.md # Project overview
 ```
