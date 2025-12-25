@@ -1,0 +1,40 @@
+name: spark4_env001
+channels:
+  - conda-forge
+
+dependencies:
+  # Core
+  - python=3.11
+  - pip
+  - setuptools
+  - wheel
+
+  # Java 21 for PySpark 4.x. Note if Java version is too high (like 24/25, then may run into problems)
+  - openjdk=21
+
+
+  # Common data / ML stack
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pyarrow
+  - matplotlib
+  - plotly
+  - streamlit
+  - seaborn
+
+  # Dev / notebook tooling
+  - jupyterlab
+  - ipykernel
+
+  # Useful utilities
+  - requests
+  - tqdm
+
+  # pip-only packages
+  - pip:
+      # PySpark 4.1.x from pip (brings Spark 4 distro)
+      - pyspark==4.1.0
+      # Optional
+      - docker
