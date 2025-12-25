@@ -36,20 +36,19 @@ By the end of this learning repo, I aimed to:
 ## 🗂️ Repository Structure
 
 ```
-pyspark-learning/
+pyspark-data-engineering-fundamentals/
 │
-├── notebooks/
-│   ├── 01_spark_basics.ipynb
-│   ├── 02_dataframes_core.ipynb
-│   ├── 03_transformations_etl.ipynb
-│   ├── 04_joins_groupby_analytics.ipynb
-│   ├── 05_performance_best_practices.ipynb
-│   └── 06_intro_spark_ml.ipynb
+├── example_csv_data/ # Practice datasets used in notebooks
 │
-├── data/
-│   └── sample_data.csv   (small practice dataset)
+├── ztm-data-engineering-main/ # Course / reference material folder
 │
-└── README.md
+├── e01_pyspark_intro.ipynb # Intro notebook (Spark basics)
+│
+├── .gitignore # Ignore environment + build files
+│
+├── spark_env001.yml - Shortcut.lnk # Shortcut to conda environment file
+│
+└── README.md # Project overview
 ```
 
 > Note: Notebooks intentionally emphasize clarity, explanation, and applied reasoning — not just code.
