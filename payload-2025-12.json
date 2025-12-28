@@ -1,6 +1,6 @@
 {
     "sparkSubmit": {
-        "entryPoint": "s3://aws-training-144707/apps/reviews-per-listing.py",
+        "entryPoint": "s3://aws-training-144707/app/reviews-per-listing.py",
         "entryPointArguments": [
             "--listings",
             "s3://aws-training-144707/listings/date=2025-12/listings.csv.gz",

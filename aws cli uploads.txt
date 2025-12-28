@@ -7,3 +7,15 @@ aws s3 cp airbnb_data/calendar.csv.gz s3://aws-training-144707/calendar/date=202
 
 # check
 aws s3 ls s3://aws-training-144707/
+
+
+# copy script we want to run on emr serverless to s3
+aws s3 cp reviews-per-listing.py s3://aws-training-144707/app/reviews-per-listing.py
+
+# command to submit spark job to aws
+aws emr-serverless start-job-run \
+	--region us-east-1 \
+	--application-id 00g27oo828v90a09 \
+	--execution-role-arn arn:aws:iam::375662988455:role/SparkServerlessRole \
+	--job-driver file://payload-2025-12.json \
+	--configuration-overrides file://configuration-overrides.json
