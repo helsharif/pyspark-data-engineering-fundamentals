@@ -1,0 +1,9 @@
+# aws commands to upload data to s3
+# make sure to open wsl command line and be in spark4_env001 environment
+# make sure aws credentials are properly set
+aws s3 cp airbnb_data/listings.csv.gz s3://aws-training-144707/listings/date=2025-12/listings.csv.gz
+aws s3 cp airbnb_data/reviews.csv.gz s3://aws-training-144707/reviews/date=2025-12/reviews.csv.gz
+aws s3 cp airbnb_data/calendar.csv.gz s3://aws-training-144707/calendar/date=2025-12/calendar.csv.gz
+
+# check
+aws s3 ls s3://aws-training-144707/

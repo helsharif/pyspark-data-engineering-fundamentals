@@ -32,6 +32,9 @@ dependencies:
   - requests
   - tqdm
 
+  # AWS
+  - awscli
+
   # pip-only packages
   - pip:
       # PySpark 4.1.x from pip (brings Spark 4 distro)
