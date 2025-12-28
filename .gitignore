@@ -188,3 +188,6 @@ profiles.yml
 *.docx
 *.tmp
 *.zip
+
+# aws secrets
+aws_secrets/
