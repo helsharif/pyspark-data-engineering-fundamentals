@@ -1,0 +1,7 @@
+{
+     "monitoringConfiguration": {
+         "s3MonitoringConfiguration": {
+             "logUri": "s3://aws-training-144707/logs"
+         }
+     }
+}
